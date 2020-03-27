@@ -5,8 +5,7 @@
           "script":"app.js", 
           "watch":"true",
           "env":{
-              "COMMON_VARIABLE": "true" ,
-              "NODE_ENV": "development"
+              "COMMON_VARIABLE": "true"   
           },
           "env_production" : {
               "NODE_ENV": "production"
@@ -20,7 +19,7 @@
           "port":"22",                   
           "ref":"origin/master",
           "repo":"git@github.com:xukaike/koa2_api.git", 
-          "path":"/opt/work2",
+          "path":"/www/website/koa_api",
           "ssh_options":"StrictHostKeyChecking=no",
           "env":{
               "NODE_ENV":"development"
