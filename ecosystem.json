@@ -20,7 +20,7 @@
           "port":"22",                   
           "ref":"origin/master",
           "repo":"git@github.com:xukaike/koa2_api.git", 
-          "path":"/www/website",
+          "path":"/opt/work2",
           "ssh_options":"StrictHostKeyChecking=no",
           "env":{
               "NODE_ENV":"development"
