@@ -1,7 +1,7 @@
 {
   "apps":[
       {
-          "name":"login_test",  
+          "name":"koa_api",  
           "script":"app.js", 
           "watch":"true",
           "env":{
