@@ -19,7 +19,7 @@
           "host":["120.27.244.150"], 
           "port":"22",                   
           "ref":"origin/master",
-          "repo":"git@github.com:xukaike/koa_login.git", 
+          "repo":"git@github.com:xukaike/koa2_api.git", 
           "path":"/www/website",
           "ssh_options":"StrictHostKeyChecking=no",
           "env":{
