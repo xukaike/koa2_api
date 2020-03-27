@@ -1,0 +1,31 @@
+{
+  "apps":[
+      {
+          "name":"login_test",  
+          "script":"app.js", 
+          "watch":"true",
+          "env":{
+              "COMMON_VARIABLE": "true" ,
+              "NODE_ENV": "development"
+          },
+          "env_production" : {
+              "NODE_ENV": "production"
+            }
+      }
+  ],
+  "deploy":{
+      "production":{
+          "user":"root",       
+          "host":["120.27.244.150"], 
+          "port":"22",                   
+          "ref":"origin/master",
+          "repo":"git@github.com:xukaike/koa_login.git", 
+          "path":"/www/website",
+          "ssh_options":"StrictHostKeyChecking=no",
+          "env":{
+              "NODE_ENV":"development"
+          },
+          "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
+      }
+  }
+}
